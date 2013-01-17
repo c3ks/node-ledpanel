@@ -1,0 +1,19 @@
+{
+  "name": "node-ledpanel",
+  "version": "0.0.1",
+  "description": "A node module for our LED-Panel",
+  "main": "index.js",
+  "devDependencies": {
+    "canvas": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/c3ks/node-ledpanel.git"
+  },
+  "keywords": [
+    "ledpanel"
+  ],
+  "author": "Gottox",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
