@@ -1,7 +1,7 @@
 var fs = require('fs');
 var Canvas = require('canvas');
 var Image = Canvas.Image;
-var canvas = new Canvas(128, 128);
+var canvas = new Canvas(128, 16);
 var ctx = canvas.getContext('2d');
 var panel = require('./index');
 
