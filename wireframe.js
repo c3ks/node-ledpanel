@@ -87,11 +87,19 @@ function loop() {
 	for( var i = 0; i < vertices.length; i++ ) {
 		var v = vertices[i];
 		var r = v.rotateX(angle).rotateY(angle).rotateZ(angle);
-		var p = r.project(128,16,60,3.5);
+		var p = r.project(128,16,20,3.5);
 		t.push(p)
 	}
 
-	ctx.strokeStyle = "rgb(255,55,255)"
+	if(angle % 360 == 0) {
+		var r = 0, g = 0;
+		while (r < 128 && g < 128) {
+			r = parseInt(Math.random()*256);
+			g = parseInt(Math.random()*256);
+		}
+		console.log(ctx.strokeStyle = "rgb("+r+","+g+",0)");
+	}
+	ctx.lineWidth = 1;
 
 	for( var i = 0; i < faces.length; i++ ) {
 		var f = faces[i]
