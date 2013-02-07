@@ -11,8 +11,10 @@ var height = 16;
 var oldMap = new Array(width * height);
 var newMap = new Array(width * height);
 
-for(var i = 0; i < oldMap.length; i++) {
-	oldMap[i] = Math.round(Math.random());
+function init() {
+	for(var i = 0; i < oldMap.length; i++) {
+		oldMap[i] = Math.round(Math.random());
+	}
 }
 
 
@@ -76,4 +78,6 @@ function loop() {
 	swapMap();
 }
 
+setInterval(init, 10000);
+init();
 setInterval(loop, 100);
